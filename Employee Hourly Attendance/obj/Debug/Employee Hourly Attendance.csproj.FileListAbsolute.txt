@@ -1,0 +1,78 @@
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\Employee Hourly Attendance.dll.config
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\Employee Hourly Attendance.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\Employee Hourly Attendance.pdb
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\csc.exe
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\csc.exe.config
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\csc.rsp
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\csi.exe
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\csi.exe.config
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\csi.rsp
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.Managed.Core.targets
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\Microsoft.Win32.Primitives.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.AppContext.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Console.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Diagnostics.StackTrace.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Globalization.Calendars.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.IO.Compression.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.IO.Compression.ZipFile.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.IO.FileSystem.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.IO.FileSystem.Primitives.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Net.Http.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Net.Sockets.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Security.Cryptography.Encoding.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Security.Cryptography.Primitives.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Text.Encoding.CodePages.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Threading.Tasks.Extensions.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.ValueTuple.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Xml.ReaderWriter.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Xml.XmlDocument.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Xml.XPath.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\System.Xml.XPath.XDocument.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\vbc.exe
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\vbc.exe.config
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\vbc.rsp
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\VBCSCompiler.exe
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\obj\Debug\Employee Hourly Attendance.csproj.AssemblyReference.cache
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\obj\Debug\Employee Hourly Attendance.csproj.CoreCompileInputs.cache
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\obj\Debug\Employee Hourly Attendance.csproj.CopyComplete
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\obj\Debug\Employee Hourly Attendance.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\obj\Debug\Employee Hourly Attendance.pdb
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\IronBarCode.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\IronSoftware.Drawing.Common.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\SixLabors.ImageSharp.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Buffers.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Drawing.Common.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Memory.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Numerics.Vectors.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Text.Encoding.CodePages.dll
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\IronBarCode.pdb
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\IronBarCode.xml
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\IronSoftware.Drawing.Common.pdb
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\SixLabors.ImageSharp.xml
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Buffers.xml
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Drawing.Common.xml
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Memory.xml
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Numerics.Vectors.xml
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\sahil\source\repos\Employee Hourly Attendance\Employee Hourly Attendance\bin\System.Text.Encoding.CodePages.xml
