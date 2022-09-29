@@ -17,7 +17,7 @@
             height: 216px;
         }
         .auto-style9 {
-            width: 152px;
+            width: 171px;
             height: 39px;
         }
         .auto-style25 {
@@ -26,7 +26,7 @@
             padding-left:35px;
         }
         .auto-style16 {
-            width: 152px;
+            width: 171px;
             height: 23px;
         }
         .auto-style26 {
@@ -37,7 +37,7 @@
             height: 23px;
         }
         .auto-style19 {
-            width: 152px;
+            width: 171px;
             height: 38px;
         }
         .auto-style27 {
@@ -48,7 +48,7 @@
             height: 38px;
         }
         .auto-style20 {
-            width: 152px;
+            width: 171px;
             height: 34px;
         }
         .auto-style28 {
@@ -59,7 +59,7 @@
             height: 34px;
         }
         .auto-style24 {
-            width: 152px;
+            width: 171px;
         }
         .auto-style29 {
             height: 55px;
@@ -70,9 +70,6 @@
         }
         .auto-style34 {
             width: 215px;
-        }
-        .auto-style36 {
-            width: 716px;
         }
         #lblheader{
             font-size:7vh;
@@ -126,6 +123,38 @@
             border:solid 1px #6c757d; 
         }
 
+        .auto-style37 {
+            border-radius: 20px;
+            border: solid 1px #6c757d;
+            margin-left: 5vh;
+            margin-right: 0px;
+        }
+
+        .auto-style38 {
+            border-radius: 20px;
+            border: solid 1px #6c757d;
+            margin-left: 5vh;
+        }
+        .auto-style39 {
+            width: 77px;
+            height: 39px;
+        }
+        .auto-style40 {
+            width: 77px;
+            height: 23px;
+        }
+        .auto-style41 {
+            width: 77px;
+            height: 38px;
+        }
+        .auto-style42 {
+            width: 77px;
+            height: 34px;
+        }
+        .auto-style43 {
+            width: 77px;
+        }
+
     </style>
      <script src="Content/bootstrap.css"></script>
     <script src="Content/bootstrap-theme.css"></script>
@@ -149,12 +178,14 @@
                         <table class="auto-style11">
                             <tr>
                                 <td class="auto-style9"></td>
+                                <td class="auto-style39">&nbsp;</td>
                                 <td class="auto-style25">
                                     <asp:Label ID="logintitle" runat="server" Font-Bold="True" Font-Size="Larger" Text="Login Here"></asp:Label>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style16"></td>
+                                <td class="auto-style40">&nbsp;</td>
                                 <td class="auto-style26">
                                     <asp:Label ID="lblerror" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="Red" Text="Label" Visible="False"></asp:Label>
                                 </td>
@@ -162,10 +193,11 @@
                             </tr>
                             <tr>
                                 <td class="auto-style19" style="text-align: center">
-                                    <asp:Label ID="lblEmail" runat="server" Text="Email :" ToolTip="Enter Your Email Here" Font-Size="Large"></asp:Label>
+                                    <asp:Label ID="lblEmail" runat="server" Text="Email " ToolTip="Enter Your Email Here" Font-Size="Large"></asp:Label>
                                 </td>
+                                <td class="auto-style41" style="text-align: center">&nbsp;</td>
                                 <td class="auto-style27">
-                                    <asp:TextBox ID="tbEmail" runat="server" CssClass="emailpass" placeholder="Enter Your Email Here" TextMode="Email" Height="27px" Width="236px" AutoCompleteType="Enabled"></asp:TextBox>
+                                    <asp:TextBox ID="tbEmail" runat="server" CssClass="emailpass" placeholder="Enter Your Email Here" TextMode="Email" Height="27px" Width="205px" AutoCompleteType="Enabled"></asp:TextBox>
                                 </td>
                                 <td class="auto-style18">
                                     <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" ControlToValidate="tbEmail" ErrorMessage="Email is Required" ForeColor="#FF3300"></asp:RequiredFieldValidator>
@@ -173,15 +205,17 @@
                             </tr>
                             <tr>
                                 <td class="auto-style20" style="text-align: center">
-                                    <asp:Label ID="lblPassword" runat="server" Text="Password" Font-Size="Large"></asp:Label></td>
+                                    <asp:Label ID="lblPassword" runat="server" Text="Password " Font-Size="Large"></asp:Label></td>
+                                <td class="auto-style42" style="text-align: center">&nbsp;</td>
                                 <td class="auto-style28">
-                                    <asp:TextBox ID="tbPassword" runat="server" CssClass="emailpass" TextMode="Password" Height="27px" Width="236px"></asp:TextBox>
+                                    <asp:TextBox ID="tbPassword" runat="server" CssClass="emailpass" TextMode="Password" Height="27px" Width="208px"></asp:TextBox>
                                 </td>
                                 <td class="auto-style21">
                                     &nbsp;</td>
                             </tr>
                             <tr>
                                 <td class="auto-style24">&nbsp;</td>
+                                <td class="auto-style43">&nbsp;</td>
                                 <td class="auto-style29">
                                     <asp:Button ID="btnsubmit" runat="server" Text="login" OnClick="btnsubmit_Click" CssClass="Loginbtn" Font-Size="Large" />
                                 </td>
@@ -201,10 +235,10 @@
                            <asp:RequiredFieldValidator ID="RequiredFieldValidatorfile" runat="server" Font-Bold="True" ErrorMessage="Please select barcode(.png)" ForeColor="#FF3300" ControlToValidate="FileUpload1"></asp:RequiredFieldValidator>
                                
                             <tr>
-                                <td class="auto-style34">&nbsp; &nbsp;<asp:Button ID="btnupload" runat="server" CssClass="scanbtn" OnClick="btnupload_Click" Text="Scan" Font-Size="Large" Height="38px" Width="200px" /></td>
+                                <td class="auto-style34"><asp:Button ID="btnupload" runat="server" CssClass="auto-style38" OnClick="btnupload_Click" Text="Scan" Font-Size="Large" Height="38px" Width="249px" /></td>
                             </tr>
                             <tr>
-                                 <td class="auto-style34">&nbsp; &nbsp;<asp:Button ID="btnViewAttendence" runat="server" CssClass="scanbtn" OnClick="btnViewAttendence_Click" Text="View your attendence" Font-Size="Large" Height="38px" Width="200px" /></td>
+                                 <td class="auto-style34"><asp:Button ID="btnViewAttendence" runat="server" CssClass="auto-style37" OnClick="btnViewAttendence_Click" Text="View your attendence" Font-Size="Large" Height="38px" Width="252px" /></td>
                             </tr>
                         </table>
                         <br />
