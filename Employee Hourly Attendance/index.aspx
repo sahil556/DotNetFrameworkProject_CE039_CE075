@@ -14,7 +14,7 @@
         }
         .auto-style11 {
             width: 93%;
-            height: 216px;
+            height: 228px;
         }
         .auto-style9 {
             width: 171px;
@@ -38,14 +38,14 @@
         }
         .auto-style19 {
             width: 171px;
-            height: 38px;
+            height: 36px;
         }
         .auto-style27 {
-            height: 38px;
+            height: 36px;
             width: 250px;
         }
         .auto-style18 {
-            height: 38px;
+            height: 36px;
         }
         .auto-style20 {
             width: 171px;
@@ -131,28 +131,13 @@
         }
 
         .auto-style38 {
+            width: 215px;
+            height: 45px;
+        }
+        .auto-style39 {
             border-radius: 20px;
             border: solid 1px #6c757d;
             margin-left: 5vh;
-        }
-        .auto-style39 {
-            width: 77px;
-            height: 39px;
-        }
-        .auto-style40 {
-            width: 77px;
-            height: 23px;
-        }
-        .auto-style41 {
-            width: 77px;
-            height: 38px;
-        }
-        .auto-style42 {
-            width: 77px;
-            height: 34px;
-        }
-        .auto-style43 {
-            width: 77px;
         }
 
     </style>
@@ -174,20 +159,19 @@
         <table class="auto-style30">
             <tr>
                 <td class="auto-style32">
-                    <asp:Panel ID="panelLogin" class="panel" runat="server" Visible="False">
+                    <asp:Panel ID="panelLogin" class="panel" runat="server" Visible="False" Height="246px">
                         <table class="auto-style11">
                             <tr>
                                 <td class="auto-style9"></td>
-                                <td class="auto-style39">&nbsp;</td>
                                 <td class="auto-style25">
                                     <asp:Label ID="logintitle" runat="server" Font-Bold="True" Font-Size="Larger" Text="Login Here"></asp:Label>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="auto-style16"></td>
-                                <td class="auto-style40">&nbsp;</td>
                                 <td class="auto-style26">
-                                    <asp:Label ID="lblerror" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="Red" Text="Label" Visible="False"></asp:Label>
+                                    <asp:Label ID="lblerror" runat="server" Font-Bold="True" Font-Size="Larger" ForeColor="#FFA722" Text="Label" Visible="False"></asp:Label>
+                                    &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail0" runat="server" ControlToValidate="tbEmail" ErrorMessage="Email is Required" Font-Bold="True" ForeColor="#FD9800"></asp:RequiredFieldValidator>
                                 </td>
                                 <td class="auto-style15"></td>
                             </tr>
@@ -195,18 +179,15 @@
                                 <td class="auto-style19" style="text-align: center">
                                     <asp:Label ID="lblEmail" runat="server" Text="Email " ToolTip="Enter Your Email Here" Font-Size="Large"></asp:Label>
                                 </td>
-                                <td class="auto-style41" style="text-align: center">&nbsp;</td>
                                 <td class="auto-style27">
                                     <asp:TextBox ID="tbEmail" runat="server" CssClass="emailpass" placeholder="Enter Your Email Here" TextMode="Email" Height="27px" Width="205px" AutoCompleteType="Enabled"></asp:TextBox>
                                 </td>
                                 <td class="auto-style18">
-                                    <asp:RequiredFieldValidator ID="RequiredFieldValidatorEmail" runat="server" ControlToValidate="tbEmail" ErrorMessage="Email is Required" ForeColor="#FF3300"></asp:RequiredFieldValidator>
-                                </td>
+                                    &nbsp;</td>
                             </tr>
                             <tr>
                                 <td class="auto-style20" style="text-align: center">
                                     <asp:Label ID="lblPassword" runat="server" Text="Password " Font-Size="Large"></asp:Label></td>
-                                <td class="auto-style42" style="text-align: center">&nbsp;</td>
                                 <td class="auto-style28">
                                     <asp:TextBox ID="tbPassword" runat="server" CssClass="emailpass" TextMode="Password" Height="27px" Width="208px"></asp:TextBox>
                                 </td>
@@ -215,7 +196,6 @@
                             </tr>
                             <tr>
                                 <td class="auto-style24">&nbsp;</td>
-                                <td class="auto-style43">&nbsp;</td>
                                 <td class="auto-style29">
                                     <asp:Button ID="btnsubmit" runat="server" Text="login" OnClick="btnsubmit_Click" CssClass="Loginbtn" Font-Size="Large" />
                                 </td>
@@ -232,13 +212,13 @@
                         <asp:FileUpload ID="FileUpload1" runat="server" CssClass="uploadbtn" onchange="IsFileSelected()" FileName="nofile" accept=".png" />
                         &nbsp;&nbsp;<table class="auto-style30">
                            
-                           <asp:RequiredFieldValidator ID="RequiredFieldValidatorfile" runat="server" Font-Bold="True" ErrorMessage="Please select barcode(.png)" ForeColor="#FF3300" ControlToValidate="FileUpload1"></asp:RequiredFieldValidator>
+                           <asp:RequiredFieldValidator ID="RequiredFieldValidatorfile" runat="server" Font-Bold="True" ErrorMessage="Please select barcode(.png)" ForeColor="#FFFF04" ControlToValidate="FileUpload1" Font-Size="Large"></asp:RequiredFieldValidator>
                                
                             <tr>
-                                <td class="auto-style34"><asp:Button ID="btnupload" runat="server" CssClass="auto-style38" OnClick="btnupload_Click" Text="Scan" Font-Size="Large" Height="38px" Width="249px" /></td>
+                                <td class="auto-style38"><asp:Button ID="btnupload" runat="server" CssClass="auto-style39" OnClick="btnupload_Click" Text="Scan" Font-Size="Large" Height="38px" Width="248px" /></td>
                             </tr>
                             <tr>
-                                 <td class="auto-style34"><asp:Button ID="btnViewAttendence" runat="server" CssClass="auto-style37" OnClick="btnViewAttendence_Click" Text="View your attendence" Font-Size="Large" Height="38px" Width="252px" /></td>
+                                 <td class="auto-style34">&nbsp;<asp:Button ID="btnViewAttendence" runat="server" CssClass="auto-style37" OnClick="btnViewAttendence_Click" Text="View your attendence" Font-Size="Large" Height="38px" Width="248px" /></td>
                             </tr>
                         </table>
                         <br />
