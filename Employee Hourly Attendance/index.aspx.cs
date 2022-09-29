@@ -23,10 +23,8 @@ namespace Employee_Hourly_Attendance
 
         protected void login_click(object sender, EventArgs e)
         {
-            if (panelLogin.Visible)
-                panelLogin.Visible = false;
-            else
-                panelLogin.Visible = true;
+            panelLogin.Visible = true;
+            panelAttendance.Visible = false;
         }
 
         protected void btnsubmit_Click(object sender, EventArgs e)
@@ -64,11 +62,61 @@ namespace Employee_Hourly_Attendance
 
         protected void btnAttendance_Click(object sender, EventArgs e)
         {
-            if (panelAttendance.Visible)
-                panelAttendance.Visible = false;
-            else
-                panelAttendance.Visible = true;
+            panelAttendance.Visible = true;
+            panelLogin.Visible = false;
         }
+
+        protected void btnViewAttendence_Click(object sender, EventArgs e)
+        {
+            string name = this.FileUpload1.FileName;
+            string path = Server.MapPath("/uploaded_barcode") + "\\" + name;
+
+            if (System.IO.File.Exists(path))
+            {
+
+                System.IO.File.Delete(path);
+            }
+            FileUpload1.SaveAs(path);
+            BarcodeResult barResults = BarcodeReader.QuicklyReadOneBarcode(path);
+
+            string empid = barResults.Text;
+            string username = null, message = "Something Went Wrong !";
+            int hour = 0;
+
+            SqlConnection con = new SqlConnection();
+            con.ConnectionString = ConfigurationManager.ConnectionStrings["employeeConnection"].ConnectionString;
+            string query = "SELECT Name, Hours FROM employee WHERE Eid='" + empid + "';";
+            try
+            {
+                using (con)
+                {
+                    using (SqlCommand cmd = new SqlCommand(query, con))
+                    {
+                        con.Open();
+                        SqlDataReader rdr = cmd.ExecuteReader(CommandBehavior.CloseConnection);
+                        if (rdr.Read())
+                        {
+                            username = rdr["Name"].ToString();
+                            hour = Convert.ToInt32(rdr["Hours"]);
+                        }
+                        con.Close();
+                    }
+                }
+                if (username != null)
+                {
+                    message = "Your Attendence is: ! " + hour;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                Response.Write("error: " + ex.Message + " " + empid);
+            }
+            this.lblresult.Text = message;
+            this.lblresult.Visible = true;
+            Response.Write("");
+        }
+
 
         protected void btnupload_Click(object sender, EventArgs e)
         {
@@ -91,11 +139,13 @@ namespace Employee_Hourly_Attendance
                 }
             }
             string empid = barResults.Text;
-            string intime = "", outtime="";
+            string intime = "", outtime = "";
             string username = null, message = "Something Went Wrong !";
+            int tmp_hour = 0;
+
             SqlConnection con = new SqlConnection();
             con.ConnectionString = ConfigurationManager.ConnectionStrings["employeeConnection"].ConnectionString;
-            string query = "SELECT Name, Intime, Outtime FROM employee WHERE Eid='" + empid + "';";
+            string query = "SELECT Name, Intime, Outtime , Hours FROM employee WHERE Eid='" + empid + "';";
             try
             {
                 using (con)
@@ -109,11 +159,12 @@ namespace Employee_Hourly_Attendance
                             username = rdr["Name"].ToString();
                             intime = rdr["Intime"].ToString();
                             outtime = rdr["Outtime"].ToString();
+                            tmp_hour = Convert.ToInt32(rdr["Hours"]);
                         }
                         con.Close();
                     }
                 }
-                if(username != null)
+                if (username != null)
                 {
                     con = new SqlConnection();
                     con.ConnectionString = ConfigurationManager.ConnectionStrings["employeeConnection"].ConnectionString;
@@ -130,22 +181,25 @@ namespace Employee_Hourly_Attendance
                         DateTime time2 = Convert.ToDateTime(time);
                         outtime = "00:00:00";
                         intime = outtime;
-                        int hour = (int)(time2 - time1).TotalSeconds;
-                        // change it to hour 
+                        int hour;
+
+                        hour = (int)(time2 - time1).TotalSeconds;
+                        // change it to hour
+
+                        hour = hour + tmp_hour;
 
                         query = "UPDATE employee SET Outtime='" + outtime + "', Hours='" + hour + "', intime='" + intime + "' WHERE Eid='" + empid + "';";
                         message = "Bye Bye ! " + username + " Have a Nice Day ! ";
                     }
-                        using (con)
+                    using (con)
+                    {
+                        using (SqlCommand cmd = new SqlCommand(query, con))
                         {
-                            using (SqlCommand cmd = new SqlCommand(query, con))
-                            {
-                                con.Open();
-                                int row = cmd.ExecuteNonQuery();
-                                con.Close();
-                            }
+                            con.Open();
+                            int row = cmd.ExecuteNonQuery();
+                            con.Close();
                         }
-                    
+                    }
                 }
             }
             catch (Exception ex)

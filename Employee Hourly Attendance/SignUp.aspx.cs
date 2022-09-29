@@ -61,9 +61,9 @@ namespace Employee_Hourly_Attendance
                 }
                 var barcode = BarcodeWriter.CreateBarcode(tbEid.Text, BarcodeEncoding.Code128);
                 barcode.AddBarcodeValueTextBelowBarcode();
-                string path = "C:/Users/sahil/source/repos/Employee Hourly Attendance/Employee Hourly Attendance/barcodes/" + tbEid.Text + ".png";
+                string path = "C:/Users/sahil/source/repos/Employee-Hourly-Attendance/Employee Hourly Attendance/barcodes/" + tbEid.Text + ".png";
                 barcode.SaveAsPng(path);
-                
+
 
             }
             catch (Exception ex)

@@ -60,6 +60,15 @@ namespace Employee_Hourly_Attendance
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidatorEid;
 
         /// <summary>
+        /// ExpressionValidator control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator ExpressionValidator;
+
+        /// <summary>
         /// lblName control.
         /// </summary>
         /// <remarks>

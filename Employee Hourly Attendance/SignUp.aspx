@@ -3,10 +3,25 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Manage Employee</title>
     <style type="text/css">
         .auto-style1 {
             width: 100%;
+            border: 1px solid #808080;
+            background-color:#17a2b8!important;
+            color:white;
+            width:500px;
+            margin-left:32%;
+            border-radius:15px;
+        }
+        .btns{
+            width:210px;
+            height:40px;
+        }
+        btnLogin{
+            width:210px;
+            height:40px;
+            margin-left:-10px;
         }
         .auto-style2 {
             width: 342px;
@@ -25,14 +40,6 @@
         .auto-style6 {
             height: 24px;
         }
-        .auto-style7 {
-            width: 156px;
-            height: 32px;
-        }
-        .auto-style8 {
-            width: 342px;
-            height: 32px;
-        }
         .auto-style9 {
             height: 32px;
         }
@@ -50,16 +57,19 @@
         .auto-style13 {
             margin-top: 0px;
         }
+        #signuptitle{
+            margin-left:21px;
+        }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form class="form" id="form1" runat="server">
         <div>
             <table class="auto-style1">
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style2" style="text-align: center">
-                        <asp:Label ID="signuptitle" runat="server" Font-Bold="True" Font-Size="XX-Large" Text=" Register Here  " BorderColor="Blue" BorderStyle="Solid" Font-Strikeout="False" Height="50px" CssClass="auto-style1" TabIndex="-1" Width="303px"></asp:Label>
+                    <td class="auto-style2">
+                        <asp:Label ID="signuptitle" runat="server" Font-Bold="True" Font-Size="XX-Large" Text="Add Employee" Font-Strikeout="False" Height="50px"  TabIndex="-1" Width="303px"></asp:Label>
                     </td>
                     <td>&nbsp;</td>
                 </tr>
@@ -77,6 +87,7 @@
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidatorEid" runat="server" ControlToValidate="tbEid" ErrorMessage="Employee id is Required ." ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RegularExpressionValidator ID="ExpressionValidator" runat="server" ControlToValidate="tbEid" ErrorMessage="Id must an alphanumeric string" ValidationExpression="[a-zA-Z0-9]*$" ForeColor="Red"></asp:RegularExpressionValidator>
 &nbsp;</td>
                 </tr>
                 <tr>
@@ -88,7 +99,7 @@
                     </td>
                     <td>
                         <asp:RequiredFieldValidator ID="RequiredFieldValidatorName" runat="server" ControlToValidate="tbName" ErrorMessage="Name is Required ." ForeColor="Red"></asp:RequiredFieldValidator>
-&nbsp;</td>
+&nbsp;</td>             <asp:CompareValidator runat="server" ErrorMessage="Name must be greater than 3 characters" ControlToValidate="tbName" Operator="GreaterThanEqual" ValueToCompare="3" ForeColor="Red"></asp:CompareValidator>
                 </tr>
                 <tr>
                     <td class="auto-style4" style="text-align: center">
@@ -108,19 +119,16 @@
                 </tr>
                 <tr>
                     <td class="auto-style7">
-                        <asp:Button ID="btnViewEmp" runat="server" CausesValidation="False" OnClick="btnViewEmp_Click" Text="View Records" UseSubmitBehavior="False" Font-Bold="True" Font-Size="Large" Height="40px" Width="183px" />
+                        <asp:Button ID="btnViewEmp" runat="server" CausesValidation="False" OnClick="btnViewEmp_Click" CssClass="btns" Text="View Records" UseSubmitBehavior="False" Font-Bold="True" Font-Size="Large"/>
                     </td>
                     <td class="auto-style8">
-                        <asp:Button ID="btnsubmit" runat="server" Text="Generate Barcode" Height="40px" OnClick="btnsubmit_Click" Width="210px" Font-Bold="True" Font-Size="Large" />
-                    &nbsp;<asp:Button ID="btnsignout" runat="server" CausesValidation="False" Height="40px" OnClick="btnsignout_Click" Text="Logout" Width="119px" Font-Bold="True" Font-Size="Large" />
+                        <asp:Button ID="btnsubmit" runat="server" Text="Generate Barcode"  OnClick="btnsubmit_Click"  CssClass="btns" Font-Bold="True" Font-Size="Large" />
                     </td>
-                    <td class="auto-style9">&nbsp;</td>
+                    <td>
+                        <asp:Button ID="btnsignout" runat="server" CausesValidation="False" OnClick="btnsignout_Click" Text="Logout" CssClass="btnLogin" Font-Bold="True" Font-Size="Large" />
+                    </td>
                 </tr>
-                <tr>
-                    <td class="auto-style10"></td>
-                    <td class="auto-style11"></td>
-                    <td class="auto-style12"></td>
-                </tr>
+             
                 <tr>
                     <td class="auto-style3">&nbsp;</td>
                     <td class="auto-style2">
